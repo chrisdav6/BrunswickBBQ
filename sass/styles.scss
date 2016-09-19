@@ -1,0 +1,793 @@
+@import "compass";
+@import "partials/normalize";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/base";
+@import "compass/css3";
+
+body {
+  background: url("../images/bg.png");
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: $fontMain;
+  background: white;
+  transition: .5s;
+  position: relative;
+  @include media("(max-width: 900px)") {
+    width: 90%;
+  }
+  @include media("(max-width: 605px)") {
+    width: 100%;
+  }
+  p {
+    margin: 1.5em 0;
+  }
+}
+
+header {
+  width: 100%;
+  height: 67px;
+  clear: both;
+  background-color: #002D44;
+}
+
+ nav {
+  float: right;
+  font-size: 1em;
+  @include media("(max-width: 605px)") {
+    font-size: .85em;
+    float: none;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    li {
+      float: left;
+      a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        text-decoration: none;
+        transition: .5s;
+        @include media("(max-width: 835px)") {
+          padding: 25px 8px;
+        }
+        @include media("(max-width: 605px)") {
+          padding: 25px 12px;
+        }
+      }
+      a.facebook {
+        padding: 16px 24px;
+        @include media("(max-width: 835px)") {
+          padding: 16px 6px;
+        }
+        @include media("(max-width: 605px)") {
+          padding: 16px 12px;
+        }
+      }
+      a:hover:not(.active) {
+        background-color: #AD0808;
+
+      }
+      .active {
+        background-color: #006495;
+      }
+    }
+  }
+}
+
+.logo {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 26px;
+    left: 55px;
+    z-index: 1000;
+    @include media("(max-width: 900px)") {
+        left: 30px;
+      }
+    @include media("(max-width: 835px)") {
+        left: 20px;
+        top: 50px;
+      }
+    @include media("(max-width: 605px)") {
+        position: relative;
+        display: block;
+        margin-top: 0;
+      }
+    img {
+      transition: .5s;
+      width: 90%;
+      @include media("(max-width: 900px)") {
+        width: 80%;
+      }
+      @include media("(max-width: 835px)") {
+        width: 70%;
+      }
+      @include media("(max-width: 605px)") {
+        width: 90%;
+      }
+    }
+}
+
+.motto {
+  position: absolute;
+  top: 180px;
+  left: 25px;
+  text-align: center;
+  font-family: 'Yellowtail', cursive;
+  color: #f71f09;
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 38px;
+  transform: rotate(-8deg);
+  text-shadow: 2px 2px 5px rgba(0,0,0,.5);
+  transition: .5s;
+  @include media("(max-width: 900px)") {
+      top: 155px;
+      left: 15px;
+      font-size: 2.25em;
+      line-height: 35px;
+  }
+  @include media("(max-width: 835px)") {
+      top: 140px;
+      left: 15px;
+      font-size: 1.8em;
+      line-height: 30px;
+  }
+  @include media("(max-width: 605px)") {
+      position: relative;
+      top: 0px;
+      left: -30px;
+      margin-top: 0;
+      font-size: 2.35em;
+      line-height: 38px;
+      }
+}
+
+.banner {
+  display: block;
+  border-top: 2px solid #002D44;
+  @include media("(max-width: 605px)") {
+    border-top: none;
+    display: none;
+  }
+}
+
+.banner img {
+  height: 301px;
+  width: 100%;
+  @include media("(max-width: 900px)") {
+      height: 250px;
+  }
+  @include media("(max-width: 605px)") {
+    display: none;
+  }
+}
+
+.hours {
+  width: 400px;
+  height: 60px;
+  background: rgba(255,255,255,.6);
+  position: absolute;
+  top: 285px;
+  right: 0;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 5px;
+  color: #002D44;
+  transition: .5s;
+  @include media("(max-width: 900px)") {
+      top: 230px;
+      right: 0;
+      height: 55px;
+  }
+  @include media("(max-width: 835px)") {
+      height: 45px;
+      width: 250px;
+  }
+  @include media("(max-width: 605px)") {
+    display: none;
+  }
+  h3 {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    @include media("(max-width: 900px)") {
+      font-size: 1.25em;
+    }
+    @include media("(max-width: 835px)") {
+        font-size: 1em;
+      }
+  }
+  h4 {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    @include media("(max-width: 900px)") {
+      font-size: .9em;
+    }
+    @include media("(max-width: 835px)") {
+        font-size: .8em;
+    }
+  }
+}
+
+section.main {
+  padding: 20px;
+  @include media("(max-width: 605px)") {
+    display: block;
+    margin-top: 130px;
+    line-height: 2em;
+  }
+  h1 {
+    color: #006495;
+    margin-top: 10px;
+    @include media("(max-width: 605px)") {
+    font-size:2.25em;
+    margin-top: -20px;
+    }
+  }
+  h2 {
+    color: #006495;
+    @include media("(max-width: 605px)") {
+    font-size:1.8em;
+    }
+  }
+  p {
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
+  ul {
+    list-style: none;
+    padding-left: 5px;
+  }
+  li {
+    margin-bottom: 10px;
+    color: #f71f09;
+    span {
+      font-weight: bold;
+    } 
+  }
+  span {
+    font-weight: bold;
+  }
+  .gary {
+    padding-top: 5px;
+    padding-right: 15px;
+    @include media("(max-width: 900px)") {
+      padding-bottom: 20px;
+    }
+    @include media("(max-width: 605px)") {
+      width: 100%;
+    }
+  }
+
+  .garyIntro {
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
+    padding: 0;
+    margin: 0;
+    @include media("(max-width: 900px)") {
+      width: 100%;
+    }
+  }
+
+  .contact {
+  color: #006495;
+  text-decoration: none;
+  transition: .5s;
+    &:hover {
+      text-decoration: underline;
+      color: #002D44;
+    }
+  }
+
+  .menuLink {
+    color: #006495;
+    text-decoration: none;
+    transition: .5s;
+    text-decoration: underline;
+    &:hover {
+      color: #002D44;
+    }
+  }
+}
+
+.menuBox {
+  width: 23%;
+  height: 200px;
+  display: inline-block;
+  margin-right: 14px;
+  margin-bottom: 30px;
+  position: relative;
+  color: white;
+  border: 3px solid black;
+  @include media("(max-width: 900px)") {
+    min-width: 150px;
+    height: 160px;
+  }
+  @include media("(max-width: 750px)") {
+    width: 44%;
+    min-width: 250px;
+    height: 275px;
+    margin-right: 30px;
+  }
+  @include media("(max-width: 605px)") {
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+  .coming-soon {
+    width: 70%;
+    font-size: 1em;
+    text-align: right;
+    padding: 5px;
+    background: rgba(226,15,15,.8);
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    @include media("(max-width: 900px)") {
+      font-size: .85em;
+    }
+    @include media("(max-width: 750px)") {
+      font-size: 1em;
+    }
+    @include media("(max-width: 605px)") {
+      width: 50%;
+      font-size: 1.5em;
+    }
+  }
+  h3 {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px;
+    background: rgba(0,100,149,.8);
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    @include media("(max-width: 900px)") {
+      font-size: .85em;
+    }
+    @include media("(max-width: 750px)") {
+      font-size: 1.5em;
+    }
+    @include media("(max-width: 605px)") {
+      font-size: 1.8em;
+    }
+  }
+}
+
+.menuBox:last-child {
+  margin-right: 0;
+}
+
+.dinner {
+  background: url("../images/dinner.jpg");
+  background-size: cover;
+  transition: .5s;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.takeOut {
+  background: url("../images/takeout.jpg");
+  background-size: cover;
+  transition: .5s;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.pizza {
+  background: url("../images/pizza.jpg");
+  background-size: cover;
+  transition: .5s;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.catering {
+  background: url("../images/catering.jpg");
+  background-size: cover;
+  transition: .5s;
+  img {
+    width: 100%;
+  }
+  &:hover {
+    opacity: .75;
+  }
+}
+
+.musicBox {
+  width: 30%;
+  height: 275px;
+  display: inline-block;
+  margin-right: 22px;
+  margin-bottom: 30px;
+  position: relative;
+  color: white;
+  border: 3px solid black;
+  transition: .5s;
+  @include media("(max-width: 900px)") {
+    height: 220px;
+    margin-right: 20px;
+  }
+  @include media("(max-width: 840px)") {
+    width: 46%;
+    height: 275px;
+    min-width: 250px;
+    margin-right: 20px;
+  }
+  @include media("(max-width: 605px)") {
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+  h3 {
+    width: 100%;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    background: rgba(0,100,149,.8);
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    @include media("(max-width: 900px)") {
+      padding-left: 5px;
+      font-size: .85em;
+    }
+    @include media("(max-width: 605px)") {
+        font-size: 1.5em;
+        padding-top: 2px;
+        padding-bottom: 20px;
+        bottom: 59px;
+      }
+    } 
+    .bandDate {
+    width: 100%;
+    font-size: 1em;
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+    @include media("(max-width: 900px)") {
+      bottom: 17px;
+      padding-left: 5px;
+      font-size: .8em;
+    }
+    @include media("(max-width: 605px)") {
+        font-size: 1.1em;
+        bottom: 53px;
+      }
+    } 
+}
+
+.musicBox:last-child {
+  margin-right: 0;
+}
+
+.eldorados {
+  background: url("../images/eldorados.jpg");
+  background-size: cover;
+}
+
+.steveKeller {
+  background: url("../images/steve-keller.jpg");
+  background-size: cover;
+}
+
+.hillHollow {
+  background: url("../images/hill-hollow.jpg");
+  background-size: cover;
+}
+
+.strayDogs {
+  background: url("../images/stray-dogs.jpg");
+  background-size: cover;
+}
+
+.steveDecatur {
+  background: url("../images/no-band.jpg");
+  background-size: cover;
+}
+
+.chrisDukes {
+  background: url("../images/chris-dukes.jpg");
+  background-size: cover;
+}
+
+.dreadResitors {
+  background: url("../images/dread-resistors.jpg");
+  background-size: cover;
+}
+
+.refrigerators {
+  background: url("../images/refrigerators.jpg");
+  background-size: cover;
+}
+
+.jam {
+  background: url("../images/no-band.jpg");
+  background-size: cover;
+}
+
+.topHrnJammin {
+  background: url("../images/no-band.jpg");
+  background-size: cover;
+}
+
+.scottyMac {
+  background: url("../images/no-band.jpg");
+  background-size: cover;
+}
+
+.melliSparks {
+  background: url("../images/melli.jpg");
+  background-size: cover;
+}
+
+.coveralls {
+  background: url("../images/coveralls.jpg");
+  background-size: cover;
+}
+
+.tomCorrigan {
+  background: url("../images/tom-corrigan.jpg");
+  background-size: cover;
+}
+
+.santacula {
+  background: url("../images/no-band.jpg");
+  background-size: cover;
+}
+
+.bandOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0,0,0,.5);
+  padding: 10px;
+  @include media("(max-width: 605px)") {
+    position: absolute;
+    top: 235px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    display: block;
+    background: rgba(0,0,0,.5);
+    padding: 5px;
+    }
+  h4 {
+    font-size: 1.5em;
+    margin-top: 0;
+    @include media("(max-width: 900px)") {
+      font-size: 1.25em;
+    }
+    @include media("(max-width: 605px)") {
+      font-size: .8em;
+      line-height: 1.1em;
+    }
+  }
+}
+
+footer {
+  margin-top: 30px;
+  width: 100%;
+  height: 360px;
+  background-image: url('../images/footer-graphic.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @include media("(max-width: 900px)") {
+      background-image: none;
+  }
+}
+
+.footerContainer {
+  width: $containerWidth;
+  margin: 0 auto;
+  font-family: $fontMain;
+  transition: .5s;
+  @include media("(max-width: 900px)") {
+    width: 90%;
+  }
+}
+
+.footerBox {
+  width: 31%;
+  border: 2px solid rgba(0,45,68, .4);
+  background: rgba(255,255,255, .5);
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px;
+  margin-right: 26px;
+  color: #006495;
+  @include media("(max-width: 900px)") {
+      width: 99%;
+      margin-bottom: 30px;
+  }
+}
+
+.footerBox:last-child {
+  height: 260px;
+  margin-right: 0;
+  padding: 5px;
+}
+
+.footerBox h3 {
+  margin: 0;
+  padding: 0;
+  color: #002D44;
+  font-size: 1.45em;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(0,45,68, .4);
+  @include media("(max-width: 605px)") {
+    font-size: 1.6em;
+  }
+}
+
+.footerBox p {
+  font-size: 1.25em;
+  margin: 0;
+  margin-bottom: 10px;
+  @include media("(max-width: 605px)") {
+    font-size: 1.25em;
+  }
+}
+
+.footerBox a {
+  color: #002D44;
+  text-decoration: none;
+  transition: .5s;
+  &:hover {
+    text-decoration: underline;
+    color: #006495;
+  }
+}
+
+.footerBox span {
+  font-weight: 800;
+}
+
+#map {
+  width: 100%;
+  height: 245px;
+}
+
+.mapContact {
+  float: right;
+  width: 49%;
+  height: 460px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  @include media("(max-width: 605px)") {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.contactForm {
+  float: left;
+  width: 49%;
+  height: 460px;
+  background: #dbdbdb;
+  padding: 20px;
+  margin-bottom: 20px;
+  @include media("(max-width: 900px)") {
+      width: 47%;
+  }
+  @include media("(max-width: 605px)") {
+    float: none;
+    display: block;
+    width: 100%
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding-left: 10px;
+}
+
+input[type=text], input[type=email] {
+  height: 50px;
+}
+
+textarea {
+  padding-top: 10px;
+  padding-left: 10px;
+  height: 150px;
+}
+
+#submit {
+  width: 200px;
+  height: 50px;
+  transition: .5s;
+  border: none;
+  background: rgba(0,100,149,.7);
+  &:hover {
+    background: #6d8089;
+  }
+  @include media("(max-width: 605px)") {
+    width: 100%
+  }
+}
+
+#liveMusic {
+  background: url("../images/Live-music.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 100%;
+  @include media("(max-width: 900px)") {
+      background-size: contain;
+      background-position: center;
+  }
+  @include media("(max-width: 605px)") {
+    background-size: 80%;
+  }
+}
+
+.copyContainer {
+  width: $containerWidth;
+  font-family: $fontMain;
+  transition: .5s;
+  margin: 0 auto;
+  @include media("(max-width: 900px)") {
+    width: 90%;
+  }
+  @include media("(max-width: 605px)") {
+    width: 90%;
+  }
+}
+
+.copyright {
+  margin-top: 40px;
+  margin-bottom: -5px;
+  color: rgba(0,45,68, .7);
+}
+
+.designedBy {
+  color: rgba(0,45,68, .7);
+  font-size: .65em;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://brunswickbbq.com/</loc>
+  <lastmod>2016-09-12T13:13:38+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://brunswickbbq.com/menus.html</loc>
+  <lastmod>2016-09-12T13:08:25+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://brunswickbbq.com/music.html</loc>
+  <lastmod>2016-09-12T13:10:51+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://brunswickbbq.com/contact.html</loc>
+  <lastmod>2016-09-12T12:48:19+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://brunswickbbq.com/pdf/MainMenu7_14-1%20web.pdf</loc>
+  <lastmod>2016-09-12T12:48:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://brunswickbbq.com/pdf/7_18_14_TakeOutMenuComplete%20web.pdf</loc>
+  <lastmod>2016-09-12T12:48:26+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://brunswickbbq.com/pdf/PizzaMenu-web.pdf</loc>
+  <lastmod>2016-09-12T12:48:27+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>
