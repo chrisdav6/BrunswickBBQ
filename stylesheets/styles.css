@@ -1071,10 +1071,10 @@ section.main .menuLink:hover {
 /* line 447, ../sass/styles.scss */
 .musicBox h3 {
   width: 100%;
-  font-size: 1em;
+  font-size: 1.3em;
   padding-top: 5px;
   padding-left: 10px;
-  padding-bottom: 25px;
+  padding-bottom: 8px;
   background: rgba(0, 100, 149, 0.8);
   margin: 0;
   position: absolute;
@@ -1092,143 +1092,119 @@ section.main .menuLink:hover {
   .musicBox h3 {
     font-size: 1.5em;
     padding-top: 2px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     bottom: 59px;
   }
 }
-/* line 468, ../sass/styles.scss */
-.musicBox .bandDate {
-  width: 100%;
-  font-size: 1em;
-  padding: 10px;
-  margin: 0;
-  position: absolute;
-  bottom: 15px;
-}
-@media (max-width: 900px) {
-  /* line 468, ../sass/styles.scss */
-  .musicBox .bandDate {
-    bottom: 17px;
-    padding-left: 5px;
-    font-size: .8em;
-  }
-}
-@media (max-width: 605px) {
-  /* line 468, ../sass/styles.scss */
-  .musicBox .bandDate {
-    font-size: 1.1em;
-    bottom: 53px;
-  }
-}
 
-/* line 487, ../sass/styles.scss */
+/* line 470, ../sass/styles.scss */
 .musicBox:last-child {
   margin-right: 0;
 }
 
-/* line 491, ../sass/styles.scss */
+/* line 474, ../sass/styles.scss */
 .eldorados {
   background: url("../images/eldorados.jpg");
   background-size: cover;
 }
 
-/* line 496, ../sass/styles.scss */
+/* line 479, ../sass/styles.scss */
 .steveKeller {
   background: url("../images/steve-keller.jpg");
   background-size: cover;
 }
 
-/* line 501, ../sass/styles.scss */
+/* line 484, ../sass/styles.scss */
 .hillHollow {
   background: url("../images/hill-hollow.jpg");
   background-size: cover;
 }
 
-/* line 506, ../sass/styles.scss */
+/* line 489, ../sass/styles.scss */
 .strayDogs {
   background: url("../images/stray-dogs.jpg");
   background-size: cover;
 }
 
-/* line 511, ../sass/styles.scss */
+/* line 494, ../sass/styles.scss */
 .steveDecatur {
   background: url("../images/no-band.jpg");
   background-size: cover;
 }
 
-/* line 516, ../sass/styles.scss */
+/* line 499, ../sass/styles.scss */
 .chrisDukes {
   background: url("../images/chris-dukes.jpg");
   background-size: cover;
 }
 
-/* line 521, ../sass/styles.scss */
+/* line 504, ../sass/styles.scss */
 .dreadResitors {
   background: url("../images/dread-resistors.jpg");
   background-size: cover;
 }
 
-/* line 526, ../sass/styles.scss */
+/* line 509, ../sass/styles.scss */
 .refrigerators {
   background: url("../images/refrigerators.jpg");
   background-size: cover;
 }
 
-/* line 531, ../sass/styles.scss */
+/* line 514, ../sass/styles.scss */
 .jam {
   background: url("../images/no-band.jpg");
   background-size: cover;
 }
 
-/* line 536, ../sass/styles.scss */
+/* line 519, ../sass/styles.scss */
 .topHrnJammin {
   background: url("../images/no-band.jpg");
   background-size: cover;
 }
 
-/* line 541, ../sass/styles.scss */
+/* line 524, ../sass/styles.scss */
 .scottyMac {
   background: url("../images/no-band.jpg");
   background-size: cover;
 }
 
-/* line 546, ../sass/styles.scss */
+/* line 529, ../sass/styles.scss */
 .melliSparks {
   background: url("../images/melli.jpg");
   background-size: cover;
 }
 
-/* line 551, ../sass/styles.scss */
+/* line 534, ../sass/styles.scss */
 .coveralls {
   background: url("../images/coveralls.jpg");
   background-size: cover;
 }
 
-/* line 556, ../sass/styles.scss */
+/* line 539, ../sass/styles.scss */
 .tomCorrigan {
   background: url("../images/tom-corrigan.jpg");
   background-size: cover;
 }
 
-/* line 561, ../sass/styles.scss */
+/* line 544, ../sass/styles.scss */
 .maruizio {
   background: url("../images/maruizio.jpg");
   background-size: cover;
 }
 
-/* line 566, ../sass/styles.scss */
+/* line 549, ../sass/styles.scss */
 .santacula {
   background: url("../images/no-band.jpg");
   background-size: cover;
 }
 
-/* line 571, ../sass/styles.scss */
+/* line 554, ../sass/styles.scss */
 .jakeshipley {
   background: url("../images/no-band.jpg");
   background-size: cover;
 }
 
-/* line 576, ../sass/styles.scss */
+/* line 559, ../sass/styles.scss */
 .bandOverlay {
   position: absolute;
   top: 0;
@@ -1240,7 +1216,7 @@ section.main .menuLink:hover {
   padding: 10px;
 }
 @media (max-width: 605px) {
-  /* line 576, ../sass/styles.scss */
+  /* line 559, ../sass/styles.scss */
   .bandOverlay {
     position: absolute;
     top: 235px;
@@ -1252,23 +1228,43 @@ section.main .menuLink:hover {
     padding: 5px;
   }
 }
-/* line 595, ../sass/styles.scss */
+/* line 578, ../sass/styles.scss */
 .bandOverlay h4 {
   font-size: 1.5em;
   margin-top: 0;
 }
 @media (max-width: 900px) {
-  /* line 595, ../sass/styles.scss */
+  /* line 578, ../sass/styles.scss */
   .bandOverlay h4 {
     font-size: 1.25em;
   }
 }
 @media (max-width: 605px) {
-  /* line 595, ../sass/styles.scss */
+  /* line 578, ../sass/styles.scss */
   .bandOverlay h4 {
     font-size: .8em;
     line-height: 1.1em;
   }
+}
+
+/* line 591, ../sass/styles.scss */
+.scheduleTitle {
+  margin-bottom: 5px;
+}
+
+/* line 595, ../sass/styles.scss */
+.bandsTitle {
+  margin-top: 30px;
+}
+
+/* line 599, ../sass/styles.scss */
+.schedule {
+  background: #006495;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 /* line 608, ../sass/styles.scss */

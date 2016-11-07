@@ -446,10 +446,10 @@ section.main {
   }
   h3 {
     width: 100%;
-    font-size: 1em;
+    font-size: 1.3em;
     padding-top: 5px;
     padding-left: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 8px;
     background: rgba(0,100,149,.8);
     margin: 0;
     position: absolute;
@@ -461,25 +461,8 @@ section.main {
     @include media("(max-width: 605px)") {
         font-size: 1.5em;
         padding-top: 2px;
-        padding-bottom: 20px;
+        padding-bottom: 5px;
         bottom: 59px;
-      }
-    } 
-    .bandDate {
-    width: 100%;
-    font-size: 1em;
-    padding: 10px;
-    margin: 0;
-    position: absolute;
-    bottom: 15px;
-    @include media("(max-width: 900px)") {
-      bottom: 17px;
-      padding-left: 5px;
-      font-size: .8em;
-    }
-    @include media("(max-width: 605px)") {
-        font-size: 1.1em;
-        bottom: 53px;
       }
     } 
 }
@@ -603,6 +586,23 @@ section.main {
       line-height: 1.1em;
     }
   }
+}
+
+.scheduleTitle {
+  margin-bottom: 5px;
+}
+
+.bandsTitle {
+  margin-top: 30px;
+}
+
+.schedule {
+  background: #006495;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 
 footer {
